@@ -202,6 +202,7 @@ footer {
     flex-wrap: wrap;
     gap: 22px;
     margin: auto;
+    justify-content: center;
 }
 
 .project-container {
