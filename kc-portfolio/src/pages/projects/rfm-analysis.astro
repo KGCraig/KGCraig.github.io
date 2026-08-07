@@ -1,14 +1,25 @@
 ---
 
-import Layout from "../../layout/BaseLayout.astro";
+import BaseLayout from "../../components/layout/BaseLayout.astro";
 import "../../styles/projects.css";
 
 ---
 
-<Layout title="RFM Customer Segmentation">
+<BaseLayout title="RFM Customer Segmentation">
   <main class="case-study">
 
+    <p>
+      <a href=".."><- Back</a>
+    </p>
+
   <h1>RFM Customer Segmentation</h1>
+    <section>
+    <h2>Video Demo</h2>
+
+    <a href="https://github.com/KGCraig/RFM-Analysis" target="_blank">
+    Download the project on GitHub ->
+    </a>
+  </section>
 
   <section>
     <h2>Problem</h2>
@@ -32,9 +43,9 @@ import "../../styles/projects.css";
       I used the RFM framework:
     </p>
     <ul>
-      <li><strong>Recency</strong> – how recently a customer purchased</li>
-      <li><strong>Frequency</strong> – how often they purchase</li>
-      <li><strong>Monetary</strong> – how much they spend</li>
+      <li><strong>Recency:</strong> how recently a customer purchased</li>
+      <li><strong>Frequency:</strong> how often they purchase</li>
+      <li><strong>Monetary:</strong> how much they spend</li>
     </ul>
   </section>
 
@@ -72,9 +83,9 @@ import "../../styles/projects.css";
     </p>
   </section>
 
-  <a href="https://github.com/YOUR_REPO" target="_blank">
-    View on GitHub →
+  <a href="https://github.com/KGCraig/RFM-Analysis" target="_blank">
+    View on GitHub ->
   </a>
 
 </main>
-</Layout>
+</BaseLayout>

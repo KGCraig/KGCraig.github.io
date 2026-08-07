@@ -6,9 +6,23 @@ import "../../styles/global.css";
 import "../../styles/header.css";
 import "../../styles/footer.css";
 
+const { title } = Astro.props;
+
+const defaultTitle = "KCraig Portfolio";
+const pageTitle = title ? `${defaultTitle} - ${title}` : defaultTitle;
+
 ---
 
-<html>
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<link rel="icon" href="/favicon.ico" />
+		<meta name="viewport" content="width=device-width" />
+		<title>{pageTitle}</title>
+	</head>
+
   <body>
     <Header />
 

@@ -5,18 +5,8 @@ import ProjectCard from "../components/layout/ProjectCard.astro";
 
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<link rel="icon" href="/favicon.ico" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Kameron Craig - Projects</title>
-	</head>
+	<BaseLayout title="Projects">
 
-	<BaseLayout>
-		<body>
 <div class="projects-page">
   <h1>Projects</h1>
 
@@ -26,7 +16,4 @@ import ProjectCard from "../components/layout/ProjectCard.astro";
     ))}
   </section>
 </div>
-			
-		</body>
 	</BaseLayout>
-</html>
