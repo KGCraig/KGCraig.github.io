@@ -4,7 +4,7 @@ export const projects = [
     description: "Customer segmentation using RFM scoring.",
     image: "",
     tech: ["Python", "Pandas", "Plotly", "Streamlit"],
-    link: "https://github.com/KGCraig/RFM-Analysis",
+    link: "./projects/rfm-analysis",
   },
   //   {
   //   title: "Tiny Image Resizer CLI",

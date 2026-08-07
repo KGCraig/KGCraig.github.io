@@ -13,17 +13,16 @@
   text-align: center;
 }
 
-
 .project-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 1.5rem;
+  justify-items: center;
 }
 
 .project-grid a {
   color: ivory;
   text-decoration: none;
-
 }
 
 .project-grid a:visited {
