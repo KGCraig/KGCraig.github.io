@@ -9,16 +9,18 @@ import "../../styles/projects.css";
   <main class="case-study">
 
     <p>
-      <a href=".."><- Back</a>
+      <a href="."><- Back to Projects</a>
     </p>
 
   <h1>RFM Customer Segmentation</h1>
     <section>
-    <h2>Video Demo</h2>
+    <h2>Demo</h2>
 
     <a href="https://github.com/KGCraig/RFM-Analysis" target="_blank">
-    Download the project on GitHub ->
-    </a>
+    Explore the project on GitHub -></a>
+    <br>
+    <a href="https://kcraig-rfm-analysis.streamlit.app/" target="_blank">
+    View the Dashboard via the Streamlit App -></a>
   </section>
 
   <section>
@@ -40,47 +42,84 @@ import "../../styles/projects.css";
   <section>
     <h2>Approach</h2>
     <p>
-      I used the RFM framework:
+      I used the RFM framework.
+      RFM analysis is a marketing technique used to segment customers based on:
     </p>
     <ul>
-      <li><strong>Recency:</strong> how recently a customer purchased</li>
-      <li><strong>Frequency:</strong> how often they purchase</li>
-      <li><strong>Monetary:</strong> how much they spend</li>
+      <li><strong>Recency:</strong> How recently a customer made a purchase.</li>
+      <li><strong>Frequency:</strong> How often they purchase</li>
+      <li><strong>Monetary:</strong> How much revenue they generate</li>
     </ul>
+    <br>
+
+    <p>
+    These scores are combined to classify customers into behavioral segments 
+    such as Champions, Loyal Customers, At Risk, and Lost Customers. 
+    These classifications support targeted marketing strategies.
+    </p>
   </section>
 
   <section>
     <h2>Implementation</h2>
     <p>
-      I calculated RFM scores using Python and Pandas, then segmented customers into groups such as
+      I calculated RFM scores using Python and Pandas, 
+      then segmented customers into groups such as 
       Champions, Loyal Customers, At Risk, and Lost Customers.
+      
     </p>
-
+    <br>
+    <p>I decided on the following segments:</p>
+      <ul>
+        <li><strong>Champions</strong>: The absolute best customers.</li>
+        <li><strong>Loyal Customers</strong>: Customers that are loyal to the business but are not yet at highest level.</li>
+        <li><strong>Potential Loyalists</strong>: Customers that have potential to become loyal.</li>
+        <li><strong>Cannot Lose Them</strong>: Customers that are valuable and need urgent attention.</li>
+        <li><strong>At Risk</strong>: Customers that are at risk of churning.</li>
+        <li><strong>Needs Attention</strong>: Customers that are in the middle-of-the-pack. 
+        With attention, can potentially become loyal.</li>
+        <li><strong>Lost Customers</strong>: Customers that have been lost.</li>
+        <li><strong>New Customers</strong>: Customers that have purchased recently 
+        but don't have much time with the business.</li>
+      </ul>
+      <br>
     <p>
-      Visualization was done using Matplotlib / Plotly to analyze distribution across segments.
+      Visualization was done using Plotly to analyze distribution across segments, 
+      and visualizations were presented using Streamlit.
     </p>
   </section>
 
   <section>
     <h2>Results</h2>
     <p>
-      The segmentation revealed clear behavioral clusters:
+      The segmentation revealed clear behavioral clusters 
+      that can be used in targeted marketing and advertisement.
+      
+      The dashboard makes it simple to target specific segments, 
+      and can be easily updated whenever the dataset changes.
     </p>
 
-    <ul>
-      <li>Champions: high-value frequent buyers</li>
-      <li>Loyal Customers: consistent spenders</li>
-      <li>At Risk: declining engagement</li>
-      <li>Lost Customers: inactive users</li>
-    </ul>
+
   </section>
 
   <section>
     <h2>What I Learned</h2>
     <p>
-      This project strengthened my understanding of data aggregation, feature engineering,
-      and how simple behavioral models can produce actionable business insights.
+      This project strengthened my understanding of data aggregation, feature engineering, 
+      data visualization, and dashboard design.
     </p>
+  </section>
+
+    <section>
+    <h2>How I Would Improve This Project in the Future</h2>
+    <ul>
+    <li>I would clean up the project structure and introduce packaging via <code>pyproject.toml</code>.</li>
+    <li>I would allow users to upload their own datasets and explore segments using the dashboard.</li>
+    <li>I would condense the amount of segments used. I feel that I used too many segments in this project. If I were to keep a few segments, I would keep the primary four: 
+    Champions, Loyalists, At Risk, Lost Customers.</li>
+    </ul>
+    
+      
+    
   </section>
 
   <a href="https://github.com/KGCraig/RFM-Analysis" target="_blank">
