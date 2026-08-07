@@ -22,7 +22,7 @@
 
 
 .skill-group {
-  background: #1e1e1e;
+  background: var(--card-color);
   padding: 1.5rem;
   border-radius: 12px;
 
@@ -32,11 +32,9 @@
 
 .skill-group h3 {
   margin-bottom: 1rem;
-  color: white;
+  color: var(--default-text);
   font-size: 1.1rem;
 }
-
-
 
 .skill-group ul {
   list-style: none;
@@ -46,12 +44,12 @@
 }
 
 .skill-group li {
-  background: rgba(255,255,255,0.08);
+  background: var(--card-color-alt);
   padding: 0.4rem 0.6rem;
   border-radius: 6px;
 
   font-size: 0.85rem;
-  color: #ddd;
+  color: var(--default-text);
 }
 
 

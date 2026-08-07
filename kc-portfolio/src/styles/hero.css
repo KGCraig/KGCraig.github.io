@@ -21,13 +21,13 @@
 .hero-subtitle {
   font-size: 1.4rem;
   font-weight: 500;
-  color: #cfcfcf;
+  color: var(--accent-text);
   margin-bottom: 1rem;
 }
 
 .hero-description {
   font-size: 1rem;
-  color: #a8a8a8;
+  color: var(--soft-text);
   line-height: 1.6;
   margin-bottom: 2rem;
 }
@@ -54,11 +54,11 @@
 }
 
 .primary {
-  background: white;
-  color: black;
+  background: var(--accent-text);
+  color: var(--default-text);
 }
 
 .secondary {
-  border: 1px solid white;
-  color: white;
+  border: 1px solid var(--accent-text);
+  color: var(--accent-text);
 }

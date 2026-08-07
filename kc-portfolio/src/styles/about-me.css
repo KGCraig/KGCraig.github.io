@@ -3,7 +3,6 @@
   max-width: 800px;
   margin: 0 auto;
   padding: 2rem 1rem;
-  color: white;
 }
 
 .about-page h1 {
@@ -13,10 +12,10 @@
 
 /* CARD STYLE */
 .about-card {
-  background: rgba(30, 30, 30, 0.75);
+  background: var(--card-color);
   backdrop-filter: blur(10px);
 
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  border: 1px solid var(--border-color);
   border-radius: 12px;
 
   padding: 1.5rem;
@@ -25,7 +24,7 @@
 
 /* TEXT */
 .about-card p {
-  color: rgba(255, 255, 255, 0.8);
+  color: var(--card-soft-text);
   line-height: 1.6;
   margin-bottom: 1rem;
 }
@@ -33,7 +32,7 @@
 /* LIST */
 .about-card ul {
   margin-left: 1rem;
-  color: rgba(255, 255, 255, 0.8);
+  color: var(--card-soft-text);
 }
 
 .about-card li {

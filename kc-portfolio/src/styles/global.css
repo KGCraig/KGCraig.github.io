@@ -1,3 +1,14 @@
+:root {
+  --background-color: rgb(21, 22, 25);
+  --default-text: rgb(238, 239, 241);
+  --card-color: rgb(32, 35, 39);
+  --card-color-alt: rgb(60, 64, 72);
+  --card-soft-text: rgb(160, 166, 176);
+  --border-color: rgb(70, 74, 83);
+  --soft-text: rgb(107, 114, 128);
+  --accent-text: rgb(69, 131, 232);
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -14,6 +25,7 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    background-color: gray;
+    color: var(--default-text);
+    background-color: var(--background-color);
 }
 

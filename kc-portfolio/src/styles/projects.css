@@ -3,7 +3,6 @@
   max-width: 1000px;
   margin: 0 auto;
   padding: 2rem 1rem;
-  color: white;
 }
 
 .projects-page h1 {
@@ -21,21 +20,29 @@
 
 /* PROJECT CARD */
 .project-card {
-  background: rgba(30, 30, 30, 0.75);
+  color: var(--default-text);
+  background: var(--card-color);
+  text-decoration: none;
   backdrop-filter: blur(10px);
 
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  border: 1px solid var(--border-color);
   border-radius: 12px;
 
   padding: 1.25rem;
 
-  transition: transform 0.2s ease, border 0.2s ease;
+  transition:
+  transform 0.2s ease-in-out,
+  border-color 0.25s ease-in-out;
 }
 
 /* hover effect */
 .project-card:hover {
   transform: translateY(-4px);
-  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-color: var(--accent-text);
+}
+
+.project-card a:visited {
+    color: var(--default-text);
 }
 
 /* title */
@@ -47,9 +54,9 @@
 /* description */
 .project-card p {
   font-size: 0.95rem;
-  color: rgba(255, 255, 255, 0.75);
   margin-bottom: 0.75rem;
   line-height: 1.4;
+  color: var(--soft-text)
 }
 
 /* TECH LIST */
@@ -67,27 +74,8 @@
 .project-card li {
   font-size: 0.75rem;
   padding: 0.2rem 0.5rem;
-
   border-radius: 6px;
-
-  background: rgba(255, 255, 255, 0.08);
-  color: rgba(255, 255, 255, 0.8);
-}
-
-
-.project-card {
-  color: white;
-  text-decoration: none;
-  font-size: 0.9rem;
-
-  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-
-  transition: color 0.2s ease, border-color 0.2s ease;
-}
-
-.project-card a:hover {
-  color: rgba(255, 255, 255, 0.85);
-  border-color: rgba(255, 255, 255, 0.5);
+  background: var(--card-color-alt);
 }
 
 .project-card img {
@@ -98,7 +86,7 @@
   border-radius: 10px;
   margin-bottom: 0.75rem;
 
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  border: 1px solid var(--border-color);
 }
 
 
@@ -107,7 +95,7 @@
   max-width: 900px;
   margin: 0 auto;
   padding: 2rem 1rem;
-  color: white;
+  color: var(--default-text);
 }
 
 .case-study h1 {
@@ -119,8 +107,8 @@
   margin-bottom: 2rem;
   padding: 1rem;
 
-  background: rgba(30, 30, 30, 0.6);
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: var(--card-color);
+  border: 1px solid var(--border-color);
   border-radius: 12px;
 
   backdrop-filter: blur(10px);
@@ -132,7 +120,7 @@
 }
 
 .case-study p, .case-study li {
-  color: rgba(255, 255, 255, 0.8);
+  color: var(--card-soft-text);
   line-height: 1.6;
 }
 

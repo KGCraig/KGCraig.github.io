@@ -3,7 +3,6 @@
   max-width: 700px;
   margin: 0 auto;
   padding: 2rem 1rem;
-  color: white;
 }
 
 .contact-page h1 {
@@ -14,21 +13,19 @@
 /* INTRO */
 .contact-intro {
   margin-bottom: 2rem;
-  color: rgba(255, 255, 255, 0.75);
+  color: var(--soft-text);
 }
 
 .contact-intro a {
-  color: white;
-  text-decoration: none;
-  border-bottom: 1px solid rgba(255,255,255,0.3);
+  color: var(--accent-text);
 }
 
 /* FORM CARD STYLE */
 .contact-form {
-  background: rgba(30, 30, 30, 0.75);
+  background: var(--card-color);
   backdrop-filter: blur(10px);
 
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  border: 1px solid var(--border-color);
   border-radius: 12px;
 
   padding: 1.5rem;
@@ -44,14 +41,14 @@
 .field label {
   margin-bottom: 0.4rem;
   font-size: 0.9rem;
-  color: rgba(255, 255, 255, 0.85);
+  color: var(--card-soft-text);
 }
 
 /* INPUTS */
 .field input,
 .field textarea {
-  background: rgba(255, 255, 255, 0.05);
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: var(--card-color-alt);
+  border: 1px solid var(--border-color);
   border-radius: 8px;
 
   padding: 0.6rem;
@@ -63,7 +60,7 @@
 
 .field input:focus,
 .field textarea:focus {
-  border: 1px solid rgba(255, 255, 255, 0.3);
+  border: 1px solid var(--accent-text);
 }
 
 /* BUTTON */
@@ -71,10 +68,10 @@
   width: 100%;
   padding: 0.75rem;
 
-  background: rgba(255, 255, 255, 0.1);
+  background: var(--card-color-alt);
   color: white;
 
-  border: 1px solid rgba(255, 255, 255, 0.15);
+  border: 1px solid var(--border-color);
   border-radius: 10px;
 
   cursor: pointer;
@@ -82,7 +79,7 @@
 }
 
 .contact-form button:hover {
-  background: rgba(255, 255, 255, 0.2);
+  background: var(--accent-text);
 }
 
 .hidden {
@@ -91,6 +88,6 @@
 
 #success-message {
   margin-top: 2rem;
-  color: rgba(255,255,255,0.85);
+  color: var(--card-color-alt);
   text-align: center;
 }
