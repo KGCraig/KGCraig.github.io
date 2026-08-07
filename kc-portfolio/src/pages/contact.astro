@@ -1,22 +1,26 @@
 ---
-import BaseLayout from "../components/layout/BaseLayout.astro";
-import "../styles/contact.css";
-
+import BaseLayout from '../components/layout/BaseLayout.astro';
+import '../styles/contact.css';
 ---
 
-	<BaseLayout title="Contact">
+<BaseLayout title="Contact">
   <main class="contact-page">
-
     <h1>Contact</h1>
 
     <p class="contact-intro">
       Contact me via
-      <a href="https://www.linkedin.com/in/kameron-c-444246217/" target="_blank">LinkedIn</a>
+      <a href="https://www.linkedin.com/in/kameron-c-444246217/" target="_blank"
+        >LinkedIn</a
+      >
       or through the form below.
     </p>
 
-    <form class="contact-form" action="https://formspree.io/f/xyzwdkyk" method="POST">
-	<input type="hidden" name="_next" value="/contact-success" />
+    <form
+      class="contact-form"
+      action="https://formspree.io/f/xyzwdkyk"
+      method="POST"
+    >
+      <input type="hidden" name="_next" value="/contact-success" />
 
       <div class="field">
         <label>Your Name *</label>
@@ -39,9 +43,6 @@ import "../styles/contact.css";
       </div>
 
       <button type="submit">Send Message</button>
-
     </form>
-
   </main>
-
-	</BaseLayout>
+</BaseLayout>

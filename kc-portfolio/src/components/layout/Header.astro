@@ -1,12 +1,14 @@
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+/>
 
 <header class="site-header">
   <nav class="nav">
-
     <a class="logo" href="/">
-  		<img src="/favicon.ico" alt="KGCraig logo" width="32px"/>
-  		<p>Kameron Craig</p>
-	  </a>
+      <img src="/favicon.ico" alt="KGCraig logo" width="32px" />
+      <p>Kameron Craig</p>
+    </a>
 
     <button
       id="nav-button"
@@ -23,32 +25,31 @@
       <li><a href="/contact">Contact</a></li>
       <li><a href="/about-me">About Me</a></li>
     </ul>
-
   </nav>
 </header>
 
 <script>
-  const btn = document.getElementById("nav-button");
-  const links = document.getElementById("nav-links");
+  const btn = document.getElementById('nav-button');
+  const links = document.getElementById('nav-links');
 
-  btn.addEventListener("click", () => {
-    const isOpen = links.classList.toggle("show");
-    btn.setAttribute("aria-expanded", String(isOpen));
+  btn.addEventListener('click', () => {
+    const isOpen = links.classList.toggle('show');
+    btn.setAttribute('aria-expanded', String(isOpen));
   });
 
   // close on outside click
-  document.addEventListener("click", (e) => {
+  document.addEventListener('click', (e) => {
     if (btn.contains(e.target) || links.contains(e.target)) return;
 
-    links.classList.remove("show");
-    btn.setAttribute("aria-expanded", "false");
+    links.classList.remove('show');
+    btn.setAttribute('aria-expanded', 'false');
   });
 
   // close on escape
-  document.addEventListener("keydown", (e) => {
-    if (e.key === "Escape") {
-      links.classList.remove("show");
-      btn.setAttribute("aria-expanded", "false");
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') {
+      links.classList.remove('show');
+      btn.setAttribute('aria-expanded', 'false');
       btn.focus();
     }
   });

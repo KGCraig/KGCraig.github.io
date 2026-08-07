@@ -1,19 +1,15 @@
 ---
-import BaseLayout from "../components/layout/BaseLayout.astro";
-import { projects } from "../data/projects";
-import ProjectCard from "../components/layout/ProjectCard.astro";
-
+import BaseLayout from '../components/layout/BaseLayout.astro';
+import { projects } from '../data/projects';
+import ProjectCard from '../components/layout/ProjectCard.astro';
 ---
 
-	<BaseLayout title="Projects">
+<BaseLayout title="Projects">
+  <div class="projects-page">
+    <h1>Projects</h1>
 
-<div class="projects-page">
-  <h1>Projects</h1>
-
-  <section class="projects-grid">
-    {projects.map((project) => (
-      <ProjectCard project={project} />
-    ))}
-  </section>
-</div>
-	</BaseLayout>
+    <section class="projects-grid">
+      {projects.map((project) => <ProjectCard project={project} />)}
+    </section>
+  </div>
+</BaseLayout>
