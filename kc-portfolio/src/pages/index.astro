@@ -1,0 +1,39 @@
+---
+import BaseLayout from "../components/layout/BaseLayout.astro";
+
+import Hero from "../components/layout/Hero.astro";
+import "../styles/hero.css";
+
+import FeaturedProjects from "../components/layout/FeaturedProjects.astro";
+import "../styles/featuredprojects.css";
+
+import Skills from "../components/layout/Skills.astro";
+import "../styles/skills.css";
+
+---
+
+
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<link rel="icon" href="/favicon.ico" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<title>Kameron Craig</title>
+	</head>
+
+	<BaseLayout>
+		<body>
+			<Hero />
+			<FeaturedProjects />
+			<Skills />
+
+
+
+		</body>
+	</BaseLayout>
+</html>
+
+

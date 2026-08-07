@@ -1,0 +1,80 @@
+---
+
+import Layout from "../../layout/BaseLayout.astro";
+import "../../styles/projects.css";
+
+---
+
+<Layout title="RFM Customer Segmentation">
+  <main class="case-study">
+
+  <h1>RFM Customer Segmentation</h1>
+
+  <section>
+    <h2>Problem</h2>
+    <p>
+      Businesses often struggle to understand which customers are most valuable and which are at risk of leaving.
+      The goal of this project was to segment customers based on purchasing behavior using RFM analysis.
+    </p>
+  </section>
+
+  <section>
+    <h2>Data</h2>
+    <p>
+      The dataset contains transaction history including purchase dates, frequency, and monetary value.
+      It was cleaned and aggregated to build customer-level metrics.
+    </p>
+  </section>
+
+  <section>
+    <h2>Approach</h2>
+    <p>
+      I used the RFM framework:
+    </p>
+    <ul>
+      <li><strong>Recency</strong> – how recently a customer purchased</li>
+      <li><strong>Frequency</strong> – how often they purchase</li>
+      <li><strong>Monetary</strong> – how much they spend</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Implementation</h2>
+    <p>
+      I calculated RFM scores using Python and Pandas, then segmented customers into groups such as
+      Champions, Loyal Customers, At Risk, and Lost Customers.
+    </p>
+
+    <p>
+      Visualization was done using Matplotlib / Plotly to analyze distribution across segments.
+    </p>
+  </section>
+
+  <section>
+    <h2>Results</h2>
+    <p>
+      The segmentation revealed clear behavioral clusters:
+    </p>
+
+    <ul>
+      <li>Champions: high-value frequent buyers</li>
+      <li>Loyal Customers: consistent spenders</li>
+      <li>At Risk: declining engagement</li>
+      <li>Lost Customers: inactive users</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>What I Learned</h2>
+    <p>
+      This project strengthened my understanding of data aggregation, feature engineering,
+      and how simple behavioral models can produce actionable business insights.
+    </p>
+  </section>
+
+  <a href="https://github.com/YOUR_REPO" target="_blank">
+    View on GitHub →
+  </a>
+
+</main>
+</Layout>

@@ -1,0 +1,47 @@
+/* PAGE */
+.about-page {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+  color: white;
+}
+
+.about-page h1 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+/* CARD STYLE */
+.about-card {
+  background: rgba(30, 30, 30, 0.75);
+  backdrop-filter: blur(10px);
+
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 12px;
+
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+/* TEXT */
+.about-card p {
+  color: rgba(255, 255, 255, 0.8);
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+/* LIST */
+.about-card ul {
+  margin-left: 1rem;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.about-card li {
+  margin-bottom: 0.4rem;
+}
+
+/* HEADERS */
+.about-card h2 {
+  font-size: 1.2rem;
+  margin-bottom: 0.75rem;
+}

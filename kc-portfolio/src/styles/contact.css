@@ -1,0 +1,96 @@
+/* PAGE */
+.contact-page {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+  color: white;
+}
+
+.contact-page h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+/* INTRO */
+.contact-intro {
+  margin-bottom: 2rem;
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.contact-intro a {
+  color: white;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(255,255,255,0.3);
+}
+
+/* FORM CARD STYLE */
+.contact-form {
+  background: rgba(30, 30, 30, 0.75);
+  backdrop-filter: blur(10px);
+
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 12px;
+
+  padding: 1.5rem;
+}
+
+/* FIELDS */
+.field {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+
+.field label {
+  margin-bottom: 0.4rem;
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.85);
+}
+
+/* INPUTS */
+.field input,
+.field textarea {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+
+  padding: 0.6rem;
+  color: white;
+
+  outline: none;
+  transition: border 0.2s ease;
+}
+
+.field input:focus,
+.field textarea:focus {
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+/* BUTTON */
+.contact-form button {
+  width: 100%;
+  padding: 0.75rem;
+
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 10px;
+
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.contact-form button:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.hidden {
+  display: none;
+}
+
+#success-message {
+  margin-top: 2rem;
+  color: rgba(255,255,255,0.85);
+  text-align: center;
+}
