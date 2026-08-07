@@ -1,6 +1,7 @@
 ---
-const { project } = Astro.props;
 import '../../styles/projects.css';
+
+const { project } = Astro.props;
 ---
 
 <a href={project.link} class="project-card">
@@ -10,6 +11,6 @@ import '../../styles/projects.css';
   <p>{project.description}</p>
 
   <ul>
-    {project.tech.map((t) => <li>{t}</li>)}
+    {project.tech.map((t: string) => <li>{t}</li>)}
   </ul>
 </a>
